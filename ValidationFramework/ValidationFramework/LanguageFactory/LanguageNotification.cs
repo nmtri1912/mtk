@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ValidationFramework.LanguageFactory
 {
-    public class LanguageNotification
+    public interface LanguageNotification
     {
+        string getErrorMessage(int code);
     }
 }
