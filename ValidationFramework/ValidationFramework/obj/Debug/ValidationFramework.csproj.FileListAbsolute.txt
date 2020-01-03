@@ -1,0 +1,14 @@
+F:\Nam 4 (2019-2020)\MTK-HuongDoiTuong\MTK\ValidationFramework\ValidationFramework\bin\Debug\ValidationFramework.exe.config
+F:\Nam 4 (2019-2020)\MTK-HuongDoiTuong\MTK\ValidationFramework\ValidationFramework\bin\Debug\ValidationFramework.exe
+F:\Nam 4 (2019-2020)\MTK-HuongDoiTuong\MTK\ValidationFramework\ValidationFramework\bin\Debug\ValidationFramework.pdb
+F:\Nam 4 (2019-2020)\MTK-HuongDoiTuong\MTK\ValidationFramework\ValidationFramework\obj\Debug\ValidationFramework.csprojAssemblyReference.cache
+F:\Nam 4 (2019-2020)\MTK-HuongDoiTuong\MTK\ValidationFramework\ValidationFramework\obj\Debug\MainWindow.g.cs
+F:\Nam 4 (2019-2020)\MTK-HuongDoiTuong\MTK\ValidationFramework\ValidationFramework\obj\Debug\App.g.cs
+F:\Nam 4 (2019-2020)\MTK-HuongDoiTuong\MTK\ValidationFramework\ValidationFramework\obj\Debug\ValidationFramework_MarkupCompile.cache
+F:\Nam 4 (2019-2020)\MTK-HuongDoiTuong\MTK\ValidationFramework\ValidationFramework\obj\Debug\ValidationFramework_MarkupCompile.lref
+F:\Nam 4 (2019-2020)\MTK-HuongDoiTuong\MTK\ValidationFramework\ValidationFramework\obj\Debug\MainWindow.baml
+F:\Nam 4 (2019-2020)\MTK-HuongDoiTuong\MTK\ValidationFramework\ValidationFramework\obj\Debug\ValidationFramework.g.resources
+F:\Nam 4 (2019-2020)\MTK-HuongDoiTuong\MTK\ValidationFramework\ValidationFramework\obj\Debug\ValidationFramework.Properties.Resources.resources
+F:\Nam 4 (2019-2020)\MTK-HuongDoiTuong\MTK\ValidationFramework\ValidationFramework\obj\Debug\ValidationFramework.csproj.GenerateResource.cache
+F:\Nam 4 (2019-2020)\MTK-HuongDoiTuong\MTK\ValidationFramework\ValidationFramework\obj\Debug\ValidationFramework.exe
+F:\Nam 4 (2019-2020)\MTK-HuongDoiTuong\MTK\ValidationFramework\ValidationFramework\obj\Debug\ValidationFramework.pdb
