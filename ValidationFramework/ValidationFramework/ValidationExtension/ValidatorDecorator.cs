@@ -10,6 +10,5 @@ namespace ValidationFramework.ValidationExtension
     {
         protected Validator validator;
 
-        
     }
 }
