@@ -8,7 +8,7 @@ namespace ValidationFramework.ValidationExtension
 {
     public class ValidatorDecorator : Validator
     {
-        protected Validator validator; // error
+        protected Validator validator; 
 
     }
 }
