@@ -67,7 +67,9 @@
     <Compile Include="Validation\GreaterThan.cs" />
     <Compile Include="Validation\GreaterThanOrEqualTo.cs" />
     <Compile Include="Validation\IsEmail.cs" />
+    <Compile Include="Validation\IsEmpty.cs" />
     <Compile Include="Validation\IsEqual.cs" />
+    <Compile Include="Validation\IsNotEmpty.cs" />
     <Compile Include="Validation\IsNotEqual.cs" />
     <Compile Include="Validation\LessThan.cs" />
     <Compile Include="Validation\LessThanOrEqualTo.cs" />
