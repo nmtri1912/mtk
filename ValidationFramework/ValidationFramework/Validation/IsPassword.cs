@@ -10,9 +10,20 @@ namespace ValidationFramework.Validation
 {
     class IsPassword : Validator
     {
+        public IsPassword()
+        {
+            this.Code = 14;
+        }
+
         public override bool check(string input, LanguageNotification l)
         {
-            return base.check(input, l);
+            if (input.IsPassword())
+            {
+                return true;
+            }
+
+            this.Message = l.getErrorMessage(this.Code);
+            return false;
         }
     }
 }
