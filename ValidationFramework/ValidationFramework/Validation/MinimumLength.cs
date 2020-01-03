@@ -9,9 +9,20 @@ namespace ValidationFramework.Validation
 {
     class MinimumLength : Validator
     {
+        private int min;
+        public MinimumLength(int min)
+        {
+            this.Code = 8;
+            this.min = min;
+        }
         public override bool check(string input, LanguageNotification l)
         {
-            return base.check(input, l);
+            if (input.Length >= min)
+            {
+                return true;
+            }
+            this.Message = l.getErrorMessage(this.Code);
+            return false;
         }
     }
 }
