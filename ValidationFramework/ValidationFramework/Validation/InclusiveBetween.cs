@@ -10,9 +10,31 @@ namespace ValidationFramework.Validation
 {
     class InclusiveBetween : Validator
     {
+        private int from, to;
+        public InclusiveBetween(int from, int to)
+        {
+            this.from = from;
+            this.to = to;
+            this.Code = 10;
+        }
         public override bool check(string input, LanguageNotification l)
         {
-            return base.check(input, l);
+            try
+            {
+                int a = int.Parse(input);
+                if (a.IsInclusiveBetween(from, to))
+                {
+                    return true;
+                }
+
+                this.Message = l.getErrorMessage(this.Code);
+                return false;
+            }
+            catch
+            {
+                this.Message = l.getErrorMessage(this.Code);
+                return false;
+            }
         }
     }
 }
