@@ -9,9 +9,22 @@ namespace ValidationFramework.Validation
 {
     public class IsNotEqual : Validator
     {
+        private string compare;
+
+        public IsNotEqual(string compare)
+        {
+            this.Code = 16;
+            this.compare = compare;
+        }
         public override bool check(string input, LanguageNotification l)
         {
-            return base.check(input, l);
+            if (!(string.Compare(input, this.compare) == 0))
+            {
+                return true;
+            }
+
+            this.Message = l.getErrorMessage(this.Code);
+            return false;
         }
     }
 }

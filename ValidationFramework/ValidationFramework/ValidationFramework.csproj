@@ -81,7 +81,6 @@
     <Compile Include="Validation\LessThanOrEqual.cs" />
     <Compile Include="Validation\MaximumLength.cs" />
     <Compile Include="Validation\MinimumLength.cs" />
-    <Compile Include="Validation\Must.cs" />
     <Compile Include="Validation\Phone.cs" />
     <Compile Include="Validator.cs" />
     <Page Include="MainWindow.xaml">
