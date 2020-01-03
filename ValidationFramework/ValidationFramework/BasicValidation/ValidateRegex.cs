@@ -36,17 +36,5 @@ namespace ValidationFramework.BasicValidation
                 return new Regex(exp, RegexOptions.IgnoreCase).IsMatch(value);
             }
         }
-
-        public static bool IsRegex(this string value, string exp)
-        {
-            if (string.IsNullOrEmpty(value))
-            {
-                return false;
-            }
-
-            string check = value.ToString();
-
-            return new Regex(exp, RegexOptions.IgnoreCase).IsMatch(check);
-        }
     }
 }

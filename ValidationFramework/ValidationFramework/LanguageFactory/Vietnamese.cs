@@ -13,37 +13,37 @@ namespace ValidationFramework.LanguageFactory
             switch (code)
             {
                 case 1:
-                    return "Khong dc trong";
+                    return "không phải mảng rỗng";
                 case 2:
-                    return "Khong phai Email";
+                    return "Là mảng rỗng";
                 case 3:
-                    return "'{0}' cannot be null.";
+                    return "Không lớn hơn";
                 case 4:
-                    return "'{0}' cannot be null or empty.";
+                    return "Không lớn hơn hoặc bằng";
                 case 5:
-                    return "'{0}' cannot be null or whitespace only.";
+                    return "Không nhỏ hơn";
                 case 6:
-                    return "'{0}' cannot be zero.";
+                    return "Không nhỏ hơn hoặc bằng";
                 case 7:
-                    return "'{0}' is not a valid password. Passwords must be 8 to 30 characters, at least on 1 uppercase letter, at least 1 lowercase letter and at least one number.";
+                    return "Vượt số ký tự cho phép";
                 case 8:
-                    return "'{0}' must be a at least {1} characters.";
+                    return "Quá ít ký tự";
                 case 9:
-                    return "'{0}' must be {1} characters or less.";
+                    return "Nằm ngoài khoảng";
                 case 10:
-                    return "'{0}' must be exactly {1} characters.";
+                    return "Nằm ngoài đoạn";
                 case 11:
-                    return "'{0}' must be at least {1} and at most {2} characters.";
+                    return "Số điện thoại không hợp lệ";
                 case 12:
-                    return "'{0}' does not match the specified criteria.";
+                    return "Thẻ Tín dụng không hợp lệ";
                 case 13:
-                    return "'{0}' does not match the specified criteria.";
+                    return "Email không hợp lệ";
                 case 14:
-                    return "'{0}' is not a valid email address.";
+                    return "Không thể dùng làm password";
                 case 15:
-                    return "'{0}' does not match the provided regular expression.";
+                    return "Không bằng";
                 case 16:
-                    return "'{0}' did not match the specified criteria.";
+                    return "Đã bằng";
                 case 17:
                     return "'{0}' is not a valid date.";
                 case 18:
