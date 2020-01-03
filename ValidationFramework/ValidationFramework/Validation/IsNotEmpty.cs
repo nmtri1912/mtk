@@ -7,12 +7,11 @@ using ValidationFramework.LanguageFactory;
 
 namespace ValidationFramework.Validation
 {
-    public class IsNull : Validator
+    public class IsNotNull : Validator
     {
         public override bool check(string input, LanguageNotification l)
         {
             return base.check(input, l);
         }
-
     }
 }

@@ -31,7 +31,7 @@ namespace ValidationFramework.ValidationExtension
 
         private bool addCheckNull(string input, LanguageNotification l)
         {
-            IsNull isNull = new IsNull();
+            IsEmpty isNull = new IsEmpty();
             if (isNull.check(input, l) == true)
             {
                 validator.Message += "- {Add} ko duoc null";
