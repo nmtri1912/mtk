@@ -9,6 +9,11 @@ namespace ValidationFramework.Validation
 {
     public class GreaterThan : Validator
     {
+        private int index;
+        public GreaterThan(int index)
+        {
+            this.index = index;
+        }
         public override bool check(string input, LanguageNotification l)
         {
             return base.check(input, l);

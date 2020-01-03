@@ -7,9 +7,9 @@ using ValidationFramework.LanguageFactory;
 
 namespace ValidationFramework.Validation
 {
-    public class IsNull : Validator
+    public class IsEmpty : Validator
     {
-        public IsNull()
+        public IsEmpty()
         {
             this.Code = 1;
         }
