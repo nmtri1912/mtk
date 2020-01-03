@@ -9,9 +9,20 @@ namespace ValidationFramework.Validation
 {
     public class MaximumLength : Validator
     {
+        private int max;
+        public MaximumLength(int max)
+        {
+            this.Code = 7;
+            this.max = max;
+        }
         public override bool check(string input, LanguageNotification l)
         {
-            return base.check(input, l);
+            if (input.Length <= max)
+            {
+                return true;
+            }
+            this.Message = l.getErrorMessage(this.Code);
+            return false;
         }
     }
 }
