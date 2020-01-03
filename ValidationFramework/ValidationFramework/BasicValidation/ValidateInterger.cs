@@ -28,7 +28,11 @@ namespace ValidationFramework.BasicValidation
             return (value < max);
         }
 
-        public static bool IsBetween(this int value, int min, int max)
+        public static bool IsExclusiveBetween(this int value, int min, int max)
+        {
+            return (value < max && value > min);
+        }
+        public static bool IsInclusiveBetween(this int value, int min, int max)
         {
             return (value <= max && value >= min);
         }
