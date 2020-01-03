@@ -57,6 +57,7 @@
     </ApplicationDefinition>
     <Compile Include="BasicValidation\ValidateInterger.cs" />
     <Compile Include="BasicValidation\ValidateRegex.cs" />
+    <Compile Include="BasicValidation\ValidateString.cs" />
     <Compile Include="LanguageFactory\English.cs" />
     <Compile Include="LanguageFactory\LanguageFac.cs" />
     <Compile Include="LanguageFactory\LanguageNotification.cs" />
