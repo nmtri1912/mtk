@@ -8,33 +8,28 @@ namespace ValidationFramework.BasicValidation
 {
     public static class ValidateInterger
     {
-        public static bool IsNotZero(this int value)
-        {
-            return (value != 0);
-        }
-
         public static bool IsEqual(this int value, int compare)
         {
-            return (value == compare);
+            return value == compare;
         }
 
         public static bool IsGreaterThan(this int value, int min)
         {
-            return (value > min);
+            return value > min;
         }
 
         public static bool IsLessThan(this int value, int max)
         {
-            return (value < max);
+            return value < max;
         }
 
         public static bool IsExclusiveBetween(this int value, int min, int max)
         {
-            return (value < max && value > min);
+            return value < max && value > min;
         }
         public static bool IsInclusiveBetween(this int value, int min, int max)
         {
-            return (value <= max && value >= min);
+            return value <= max && value >= min;
         }
     }
 }
