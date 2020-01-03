@@ -20,12 +20,12 @@ namespace ValidationFramework.BasicValidation
 
         public static bool IsGreaterThan(this int value, int min)
         {
-            return (value >= min);
+            return (value > min);
         }
 
         public static bool IsLessThan(this int value, int max)
         {
-            return (value <= max);
+            return (value < max);
         }
 
         public static bool IsBetween(this int value, int min, int max)

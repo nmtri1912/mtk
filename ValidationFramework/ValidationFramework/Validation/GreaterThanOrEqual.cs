@@ -8,12 +8,12 @@ using ValidationFramework.LanguageFactory;
 
 namespace ValidationFramework.Validation
 {
-    public class LessThan : Validator
+    public class GreaterThanOrEqual : Validator
     {
         private int index;
-        public LessThan(int index)
+        public GreaterThanOrEqual(int index)
         {
-            this.Code = 5;
+            this.Code = 4;
             this.index = index;
         }
         public override bool check(string input, LanguageNotification l)
@@ -21,7 +21,7 @@ namespace ValidationFramework.Validation
             try
             {
                 int a = int.Parse(input);
-                if (a.IsLessThan(index))
+                if (a.IsEqual(index) || a.IsGreaterThan(index))
                 {
                     return true;
                 }

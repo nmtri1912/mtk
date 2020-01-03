@@ -16,7 +16,6 @@ namespace ValidationFramework.Validation
 
         public override bool check(string input, LanguageNotification l)
         {
-
             if (string.IsNullOrEmpty(input))
             {
                 this.Message = l.getErrorMessage(this.Code);
