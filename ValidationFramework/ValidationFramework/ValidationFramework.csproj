@@ -69,12 +69,11 @@
     <Compile Include="Validation\IsEmail.cs" />
     <Compile Include="Validation\IsEqual.cs" />
     <Compile Include="Validation\IsNotEqual.cs" />
-    <Compile Include="Validation\IsNotNull.cs" />
-    <Compile Include="Validation\IsNull.cs" />
     <Compile Include="Validation\LessThan.cs" />
     <Compile Include="Validation\LessThanOrEqualTo.cs" />
     <Compile Include="Validation\MaximumLength.cs" />
     <Compile Include="Validation\Must.cs" />
+    <Compile Include="Validation\Phone.cs" />
     <Compile Include="Validator.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
