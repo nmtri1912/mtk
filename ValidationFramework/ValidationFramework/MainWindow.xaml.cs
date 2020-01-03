@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ValidationFramework.LanguageFactory;
+using ValidationFramework.Validation;
+using ValidationFramework.ValidationExtension;
 
 namespace ValidationFramework
 {
@@ -20,9 +23,35 @@ namespace ValidationFramework
     /// </summary>
     public partial class MainWindow : Window
     {
+        private LanguageFac lFac;
+        private LanguageNotification lNotify;
+        IsEmail n2;
+        Validator deco;
         public MainWindow()
         {
             InitializeComponent();
+            lFac = LanguageFac.getInstance();
+            lNotify = lFac.getNotificationType("vi");
+            n2 = new IsEmail();
+            deco = new IsEmailExtension(n2);
+        }
+
+
+
+        
+
+        private void btnCheck_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(deco.Message);
+        }
+
+
+        private void txt1_LostFocus(object sender, RoutedEventArgs e)
+        {
+            error1.Content = "";
+            deco.check(textBox.Text, lNotify);
+
+            error1.Content = deco.Message;
         }
     }
 }

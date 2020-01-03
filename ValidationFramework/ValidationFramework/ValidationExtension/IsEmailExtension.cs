@@ -17,25 +17,30 @@ namespace ValidationFramework.ValidationExtension
         }
         public override bool check(string input, LanguageNotification l)
         {
-            if (validator.check(input, l) == false)
+            if (validator.check(input, l) == true)
             {
-                return false;
+                if (addCheckCom(input, l) == true)
+                {
+                    return true;
+                }
             }
 
-            if (addCheckNull(input, l) == true)
-            {
-                return true;
-            }
+            this.Message += validator.Message;
             return false;
         }
 
-        private bool addCheckNull(string input, LanguageNotification l)
+        private bool addCheckCom(string input, LanguageNotification l)
         {
-            IsEmpty isNull = new IsEmpty();
-            if (isNull.check(input, l) == true)
+            if (input.Length > 5)
             {
-                validator.Message += "- {Add} ko duoc null";
+                if (input.Substring(input.Length - 4) == ".com")
+                {
+                    return true;
+                }
+                this.Message += "Email khong dung dinh dang .com";
+                return false;
             }
+
             return false;
         }
     }
