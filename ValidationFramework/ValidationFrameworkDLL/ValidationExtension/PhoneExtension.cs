@@ -23,7 +23,7 @@ namespace ValidationFramework.ValidationExtension
                 }
             }
 
-            this.Message += validator.Message;
+            this.Message += validator.getMessage();
             return false;
         }
 

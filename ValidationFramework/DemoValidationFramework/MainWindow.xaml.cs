@@ -79,7 +79,7 @@ namespace DemoValidationFramework
             creditCheck = new CreditCard();
             if (!creditCheck.check(textCreditCardName.Text, lNotify))
             {
-                labelCreditCard.Content = creditCheck.Message;
+                labelCreditCard.Content = creditCheck.getMessage();
                 textCreditCardName.BorderBrush = Brushes.Red;
             }
             else
@@ -94,7 +94,7 @@ namespace DemoValidationFramework
             phoneCheck = new Phone();
             if (!phoneCheck.check(textPhoneNumber.Text, lNotify))
             {
-                labelPhoneNumber.Content = phoneCheck.Message;
+                labelPhoneNumber.Content = phoneCheck.getMessage();
                 textPhoneNumber.BorderBrush = Brushes.Red;
             }
             else
@@ -109,7 +109,7 @@ namespace DemoValidationFramework
             emailCheck = new IsEmail();
             if (!emailCheck.check(textEmail.Text, lNotify))
             {
-                labelEmail.Content = emailCheck.Message;
+                labelEmail.Content = emailCheck.getMessage();
                 textEmail.BorderBrush = Brushes.Red;
             }
             else
@@ -125,7 +125,7 @@ namespace DemoValidationFramework
             emailDocComCheck = new IsEmailExtension(new IsEmail());
             if (!emailDocComCheck.check(textEmailDocCom.Text, lNotify))
             {
-                labelEmailDocCom.Content = emailDocComCheck.Message;
+                labelEmailDocCom.Content = emailDocComCheck.getMessage();
                 textEmailDocCom.BorderBrush = Brushes.Red;
             }
             else
@@ -140,7 +140,7 @@ namespace DemoValidationFramework
             passwordCheck = new IsPassword();
             if (!passwordCheck.check(pwbPassword.Password, lNotify))
             {
-                labelPassword.Content = passwordCheck.Message;
+                labelPassword.Content = passwordCheck.getMessage();
                 pwbPassword.BorderBrush = Brushes.Red;
             }
             else

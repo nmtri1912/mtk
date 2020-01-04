@@ -33,7 +33,7 @@ namespace ValidationFramework.TypeShow
             string message = "";
             foreach (Validator va in validators)
             {
-                message = message + va.Message + "\n";
+                message = message + va.getMessage() + "\n";
             }
             validators.Clear();
             showBehavior.show(message);

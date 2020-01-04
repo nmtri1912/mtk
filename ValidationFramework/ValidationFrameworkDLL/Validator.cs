@@ -11,10 +11,15 @@ namespace ValidationFramework
     {
         protected int Code; // Loai code
 
-        public string Message; // Thông báo
+        protected string Message; // Thông báo
         public virtual bool check(string input, LanguageNotification l)
         {
             return true;
+        }
+
+        public string getMessage()
+        {
+            return this.Message;
         }
     }
 }
