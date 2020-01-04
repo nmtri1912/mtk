@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace ValidationFramework.TypeShow
 {
-    public class ShowType
+    public interface ShowBehavior
     {
-        public enum TypeNotification
-        {
-            MessageBox,
-            Popup
-        }
+        void show(string str);
     }
 }

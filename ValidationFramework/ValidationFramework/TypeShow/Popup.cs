@@ -3,20 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows;
 
 namespace ValidationFramework.TypeShow
 {
-    public class MessBox : ShowBehavior
+    public class Popup : ShowBehavior
     {
-        public MessBox()
+        public Popup()
         {
 
         }
-
         public void show(string str)
         {
-            MessageBox.Show(str);
+            NotifyWindows nb = new NotifyWindows(str);
+            nb.ShowDialog();
         }
     }
 }
