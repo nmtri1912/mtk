@@ -16,7 +16,7 @@ namespace ValidationFramework.TypeShow
 
         public void show(string str)
         {
-            MessageBox.Show(str);
+            MessageBox.Show(str, "Thông báo lỗi");
         }
     }
 }

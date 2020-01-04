@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ValidationFramework.BasicValidation;
 using ValidationFramework.LanguageFactory;
 
 namespace ValidationFramework.Validation
@@ -15,7 +16,7 @@ namespace ValidationFramework.Validation
         }
         public override bool check(string input, LanguageNotification l)
         {
-            if (input[0] == 0 && input.Length == 10) 
+            if (input.Length == 10 && input.IsNumberic())
             {
                 return true;
             }

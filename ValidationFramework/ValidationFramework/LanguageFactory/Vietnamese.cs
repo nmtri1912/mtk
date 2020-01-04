@@ -39,7 +39,7 @@ namespace ValidationFramework.LanguageFactory
                 case 13:
                     return "Email không hợp lệ";
                 case 14:
-                    return "Không thể dùng làm password";
+                    return "Tối thiểu 8 ký tự, ít nhất một chữ cái và một số";
                 case 15:
                     return "Không bằng";
                 case 16:

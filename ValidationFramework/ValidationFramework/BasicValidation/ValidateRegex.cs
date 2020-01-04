@@ -31,7 +31,8 @@ namespace ValidationFramework.BasicValidation
             }
             else
             {
-                string exp = @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,30}$";
+                //Tối thiểu 8 ký tự, ít nhất một chữ cái và một số
+                string exp = @"^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$";
 
                 return new Regex(exp, RegexOptions.IgnoreCase).IsMatch(value);
             }

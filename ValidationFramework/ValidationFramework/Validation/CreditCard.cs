@@ -19,26 +19,29 @@ namespace ValidationFramework.Validation
         {
             try 
             {
-                //Tính tổng các chữ số từ chữ số thứ nhất bên phải qua cách nhau một chữ số
-                for (i = input.Length - 1; i >= 0; i -= 2)
+                if (input.Length != 0)
                 {
-                    this.checkSum += (input[i] - '0');
-                }
-
-                ////Tính tổng các chữ số từ chữ số thứ hai bên phải qua cách nhau một chữ số
-                for (i = input.Length - 2; i >= 0; i -= 2)
-                {
-                    int val = ((input[i] - '0') * 2);
-                    while (val > 0)
+                    //Tính tổng các chữ số từ chữ số thứ nhất bên phải qua cách nhau một chữ số
+                    for (i = input.Length - 1; i >= 0; i -= 2)
                     {
-                        checkSum += (val % 10);
-                        val /= 10;
+                        this.checkSum += (input[i] - '0');
                     }
-                }
 
-                if ((checkSum % 10) == 0) 
-                {
-                    return true;
+                    ////Tính tổng các chữ số từ chữ số thứ hai bên phải qua cách nhau một chữ số
+                    for (i = input.Length - 2; i >= 0; i -= 2)
+                    {
+                        int val = ((input[i] - '0') * 2);
+                        while (val > 0)
+                        {
+                            checkSum += (val % 10);
+                            val /= 10;
+                        }
+                    }
+
+                    if ((checkSum % 10) == 0)
+                    {
+                        return true;
+                    }
                 }
 
                 this.Message = l.getErrorMessage(this.Code);

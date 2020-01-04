@@ -39,7 +39,7 @@ namespace ValidationFramework.LanguageFactory
                 case 13:
                     return "Invalid email";
                 case 14:
-                    return "Cannot be used as password";
+                    return "Minimum eight characters, at least one letter and one number";
                 case 15:
                     return "Not equal to";
                 case 16:

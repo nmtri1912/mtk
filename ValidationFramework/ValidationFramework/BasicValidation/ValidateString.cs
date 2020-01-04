@@ -53,5 +53,16 @@ namespace ValidationFramework.BasicValidation
             return string.Compare(value, compare) == 0;
         }
 
+        public static bool IsNumberic(this string value)
+        {
+            foreach(char c in value)
+            {
+                if (c > '9' || c < '0') 
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
     }
 }
