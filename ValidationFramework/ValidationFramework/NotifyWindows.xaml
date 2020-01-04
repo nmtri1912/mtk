@@ -1,0 +1,14 @@
+﻿<Window x:Class="ValidationFramework.NotifyWindows"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ValidationFramework"
+        mc:Ignorable="d"
+        Title="NotifyWindows" Height="300" Width="300" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <ScrollViewer>
+            <TextBlock x:Name="Alert" TextAlignment="Left" TextWrapping="Wrap" Text="TextBlock" Margin="10" VerticalAlignment="Top" Height="auto" Width="260"/>
+        </ScrollViewer>
+    </Grid>
+</Window>

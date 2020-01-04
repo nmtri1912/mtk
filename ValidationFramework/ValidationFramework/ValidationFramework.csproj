@@ -55,13 +55,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BasicValidation\ValidateDatetime.cs" />
     <Compile Include="BasicValidation\ValidateInterger.cs" />
+    <Compile Include="BasicValidation\ValidateObject.cs" />
     <Compile Include="BasicValidation\ValidateRegex.cs" />
     <Compile Include="BasicValidation\ValidateString.cs" />
     <Compile Include="LanguageFactory\English.cs" />
     <Compile Include="LanguageFactory\LanguageFac.cs" />
     <Compile Include="LanguageFactory\LanguageNotification.cs" />
     <Compile Include="LanguageFactory\Vietnamese.cs" />
+    <Compile Include="NotifyWindows.xaml.cs">
+      <DependentUpon>NotifyWindows.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TypeShow\MessBox.cs" />
     <Compile Include="TypeShow\ShowType.cs" />
     <Compile Include="ValidationExtension\IsEmailExtension.cs" />
@@ -95,6 +100,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="NotifyWindows.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

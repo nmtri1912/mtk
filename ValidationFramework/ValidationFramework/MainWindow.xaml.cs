@@ -49,8 +49,9 @@ namespace ValidationFramework
         private void txt1_LostFocus(object sender, RoutedEventArgs e)
         {
             error1.Content = "";
+            n2 = new IsEmail();
+            deco = new IsEmailExtension(n2);
             deco.check(textBox.Text, lNotify);
-
             error1.Content = deco.Message;
         }
     }
