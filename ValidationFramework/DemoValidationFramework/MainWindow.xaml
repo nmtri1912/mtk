@@ -1,0 +1,74 @@
+﻿<Window x:Class="DemoValidationFramework.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DemoValidationFramework"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid Margin="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="300" />
+                    <ColumnDefinition Width="300" />
+                </Grid.ColumnDefinitions>
+
+                <!--Language-->
+                <Label Content="Validation language" Grid.Column="0" Grid.Row="0" />
+                <ComboBox Name="comboValidationLanguage" SelectionChanged="comboValidationLanguage_SelectionChanged" Margin="3" Grid.Column="1" Grid.Row="0" >
+                    <ComboBoxItem IsSelected="True">Vietnamese</ComboBoxItem>
+                    <ComboBoxItem>English</ComboBoxItem>
+                </ComboBox>
+
+                <!--show type-->
+                <Label Content="Show type" Grid.Column="0" Grid.Row="1" />
+                <ComboBox Name="comboShowType" SelectionChanged="comboShowType_SelectionChanged" Margin="3" Grid.Column="1" Grid.Row="1" >
+                    <ComboBoxItem IsSelected="True">MessageBox</ComboBoxItem>
+                    <ComboBoxItem>NotifyWindows</ComboBoxItem>
+                </ComboBox>
+
+                <!--creditCard-->
+                <Label Content="Credit Card" Grid.Column="0" Grid.Row="2" Margin="0 10 0 0"/>
+                <TextBox Name="textCreditCardName" LostFocus="CreditCard_LostFocus" Grid.Column="1" Grid.Row="2" Margin="0 10 0 0" />
+                <Label Name="labelCreditCard" Foreground="Red" Grid.Column="3" Grid.Row="2" Margin="0 10 0 0"></Label>
+
+                <!--phone number-->
+                <Label Content="Phone number" Grid.Column="0" Grid.Row="3" Margin="0 10 0 0"/>
+                <TextBox Name="textPhoneNumber" LostFocus="PhoneNumber_LostFocus" Grid.Column="1" Grid.Row="3" Margin="0 10 0 0"/>
+                <Label Name="labelPhoneNumber" Foreground="Red" Grid.Column="3" Grid.Row="3" Margin="0 10 0 0"></Label>
+
+                <!--email-->
+                <Label Content="E-mail" Grid.Column="0" Grid.Row="4" Margin="0 10 0 0"/>
+                <TextBox Name="textEmail" LostFocus="Email_LostFocus" Grid.Column="1" Grid.Row="4" Margin="0 10 0 0"/>
+                <Label Name="labelEmail" Foreground="Red" Grid.Column="3" Grid.Row="4" Margin="0 10 0 0"></Label>
+
+                <!--email.com-->
+                <Label Content="E-mail .com" Grid.Column="0" Grid.Row="5" Margin="0 10 0 0"/>
+                <TextBox Name="textEmailDocCom" LostFocus="EmailDocCom_LostFocus" Grid.Column="1" Grid.Row="5" Margin="0 10 0 0"/>
+                <Label Name="labelEmailDocCom" Foreground="Red" Grid.Column="3" Grid.Row="5" Margin="0 10 0 0"></Label>
+
+                <!--password-->
+                <Label Content="Password" Grid.Column="0" Grid.Row="6" Margin="0 10 0 0"/>
+                <PasswordBox Name="pwbPassword" LostFocus="Password_LostFocus" Grid.Column="1" Grid.Row="6" Margin="0 10 0 0"/>
+                <Label Name="labelPassword" Foreground="Red" Grid.Column="3" Grid.Row="6" Margin="0 10 0 0"></Label>
+
+                <!--submit-->
+                <StackPanel Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Center">
+                    <Button Name="buttonSubmit" Content="Submit" Margin="3" Width="75" Height="30" />
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>
