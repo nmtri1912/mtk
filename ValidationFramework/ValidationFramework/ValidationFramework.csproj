@@ -67,9 +67,13 @@
     <Compile Include="NotifyWindows.xaml.cs">
       <DependentUpon>NotifyWindows.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TypeShow\ListValidator.cs" />
     <Compile Include="TypeShow\MessBox.cs" />
+    <Compile Include="TypeShow\Popup.cs" />
+    <Compile Include="TypeShow\ShowBehavior.cs" />
     <Compile Include="TypeShow\ShowType.cs" />
     <Compile Include="ValidationExtension\IsEmailExtension.cs" />
+    <Compile Include="ValidationExtension\PhoneExtension.cs" />
     <Compile Include="ValidationExtension\ValidatorDecorator.cs" />
     <Compile Include="Validation\CreditCard.cs" />
     <Compile Include="Validation\ExclusiveBetween.cs" />
