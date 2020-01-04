@@ -7,10 +7,68 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="textBox" LostFocus="txt1_LostFocus" HorizontalAlignment="Left" Height="23" Margin="312,117,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="Check" Click="btnCheck_Click" Content="Button" HorizontalAlignment="Left" Margin="339,190,0,0" VerticalAlignment="Top" Width="75"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="160,176,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="error1" Foreground="Red" Content="" HorizontalAlignment="Left" Margin="482,114,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.47,0.598"/>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid Margin="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="300" />
+                    <ColumnDefinition Width="300" />
+                </Grid.ColumnDefinitions>
 
+                <!--Language-->
+                <Label Content="Validation language" Grid.Column="0" Grid.Row="0" />
+                <ComboBox Name="comboValidationLanguage" SelectionChanged="comboValidationLanguage_SelectionChanged" Margin="3" Grid.Column="1" Grid.Row="0" >
+                    <ComboBoxItem IsSelected="True">Vietnamese</ComboBoxItem>
+                    <ComboBoxItem>English</ComboBoxItem>
+                </ComboBox>
+
+                <!--show type-->
+                <Label Content="Show type" Grid.Column="0" Grid.Row="1" />
+                <ComboBox Name="comboShowType" SelectionChanged="comboShowType_SelectionChanged" Margin="3" Grid.Column="1" Grid.Row="1" >
+                    <ComboBoxItem IsSelected="True">MessageBox</ComboBoxItem>
+                    <ComboBoxItem>NotifyWindows</ComboBoxItem>
+                </ComboBox>
+
+                <!--creditCard-->
+                <Label Content="Credit Card" Grid.Column="0" Grid.Row="2" Margin="0 10 0 0"/>
+                <TextBox Name="textCreditCardName" LostFocus="CreditCard_LostFocus" Grid.Column="1" Grid.Row="2" Margin="0 10 0 0" />
+                <Label Name="labelCreditCard" Foreground="Red" Grid.Column="3" Grid.Row="2" Margin="0 10 0 0"></Label>
+
+                <!--phone number-->
+                <Label Content="Phone number" Grid.Column="0" Grid.Row="3" Margin="0 10 0 0"/>
+                <TextBox Name="textPhoneNumber" LostFocus="PhoneNumber_LostFocus" Grid.Column="1" Grid.Row="3" Margin="0 10 0 0"/>
+                <Label Name="labelPhoneNumber" Foreground="Red" Grid.Column="3" Grid.Row="3" Margin="0 10 0 0"></Label>
+
+                <!--email-->
+                <Label Content="E-mail" Grid.Column="0" Grid.Row="4" Margin="0 10 0 0"/>
+                <TextBox Name="textEmail" LostFocus="Email_LostFocus" Grid.Column="1" Grid.Row="4" Margin="0 10 0 0"/>
+                <Label Name="labelEmail" Foreground="Red" Grid.Column="3" Grid.Row="4" Margin="0 10 0 0"></Label>
+
+                <!--email.com-->
+                <Label Content="E-mail .com" Grid.Column="0" Grid.Row="5" Margin="0 10 0 0"/>
+                <TextBox Name="textEmailDocCom" LostFocus="EmailDocCom_LostFocus" Grid.Column="1" Grid.Row="5" Margin="0 10 0 0"/>
+                <Label Name="labelEmailDocCom" Foreground="Red" Grid.Column="3" Grid.Row="5" Margin="0 10 0 0"></Label>
+
+                <!--password-->
+                <Label Content="Password" Grid.Column="0" Grid.Row="6" Margin="0 10 0 0"/>
+                <PasswordBox Name="pwbPassword" LostFocus="Password_LostFocus" Grid.Column="1" Grid.Row="6" Margin="0 10 0 0"/>
+                <Label Name="labelPassword" Foreground="Red" Grid.Column="3" Grid.Row="6" Margin="0 10 0 0"></Label>
+
+                <!--submit-->
+                <StackPanel Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Center">
+                    <Button Name="buttonSubmit" Click="buttonSubmit_Click" Content="Submit" Margin="3" Width="75" Height="30" />
+                </StackPanel>
+            </Grid>
+        </StackPanel>
     </Grid>
 </Window>
