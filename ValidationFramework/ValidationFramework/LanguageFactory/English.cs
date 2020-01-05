@@ -44,24 +44,6 @@ namespace ValidationFramework.LanguageFactory
                     return "Not equal to";
                 case 16:
                     return "Already by";
-                case 17:
-                    return "'{0}' is not a valid date.";
-                case 18:
-                    return "'{0}' failed the provided business rule provided.";
-                case 19:
-                    return "'{0}' must be greater than '{1}'.";
-                case 20:
-                    return "'{0}' must be greater than or equal to '{1}'.";
-                case 21:
-                    return "'{0}' must be less than '{1}'.";
-                case 22:
-                    return "'{0}' must be less than or equal to '{1}'.";
-                case 23:
-                    return "'{0}' must be equal to '{1}'.";
-                case 24:
-                    return "'{0}' must be between '{1}' and '{2}' (inclusive).";
-                case 25:
-                    return "'{0}' must be between '{1}' and '{2}' (exclusive).";
             }
             return null;
         }
